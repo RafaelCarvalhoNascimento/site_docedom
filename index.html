@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +8,47 @@
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <style>
-        /* .div1 {
-            background-color: red;
-        }
-        .div2 {
-            background-color: green;
-        } */
-        body {
-            background-color: #FFF6EC;
-        }
-        .img-logo {
-            padding: 30px 50px;
-        }
 
-        .menu-img img{
-            margin-top: 25px;
-        }
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-        .navmenu {
-            display: flex;
-            justify-content: end;
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="row">
-        <div class="col-md-7 div1">
-            <div class="div1">
-                <img src="imagens/logo_doce_dom_colorido.png" class="img-fluid img-logo" width="600px">
-            </div>
-        </div>
-        <div class="col-md-5 div2">
-            <div class="div2">
-
-                <nav class="navbar navbar-light navmenu">
-                    <div class="container-fluid">
-                      <a class="navbar-brand menu-img" href="#">
-                        <img src="imagens/menu.png" alt="" width="10%"  class="d-inline-block align-text-center">
-                        Menu
-                      </a>
-                    </div>
-                  </nav>
-
-                <div class="container">
-                    <img src="imagens/Template.png" width="100%">
-                </div>
-            </div>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4 bg-light">
+            <h5 class="text-dark h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-end pl-2">
+            <span class="">MENU</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="row">
+
+        <div class="col-6 conteudo-esq">
+            <div class="container">
+                <h1 class="titulo">Fabiana Santos</h1>
+                <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet rem quos, distinctio delectus perferendis omnis, ea expedita vel, odio explicabo libero aperiam quae similique doloremque. Dolorum fugiat adipisci nostrum necessitatibus?</p>
+            </div>
+        </div>
+
+        <div class="col-6 conteudo-dir">
+            <div class="d-flex justify-content-center">
+                <img src="imagens/Template.png" class="img-dir">
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
